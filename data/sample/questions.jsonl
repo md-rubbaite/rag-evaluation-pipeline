@@ -1,0 +1,10 @@
+{"id": "q1", "question": "How long do customers have to ask for a refund?", "relevant_doc_ids": ["refunds"], "reference_answer": "Customers can request a refund within 30 days of purchase."}
+{"id": "q2", "question": "How many days does a merchant have to submit chargeback evidence?", "relevant_doc_ids": ["chargebacks"], "reference_answer": "Merchants have 7 days to submit evidence after a chargeback notice."}
+{"id": "q3", "question": "What is the fee for a chargeback?", "relevant_doc_ids": ["chargebacks"], "reference_answer": "A chargeback fee of 15 USD is charged for every dispute."}
+{"id": "q4", "question": "What documents do businesses provide for identity verification?", "relevant_doc_ids": ["kyc"], "reference_answer": "Businesses provide registration documents and details of every beneficial owner holding 25 percent or more."}
+{"id": "q5", "question": "How much does an international card payment cost?", "relevant_doc_ids": ["fees"], "reference_answer": "Domestic pricing of 2.9 percent plus 0.30 USD, plus 1.5 percent for international cards."}
+{"id": "q6", "question": "What happens if I retry a payment with the same idempotency key?", "relevant_doc_ids": ["idempotency"], "reference_answer": "Retrying with the same key returns the original result instead of creating a second charge."}
+{"id": "q7", "question": "How often should API keys be rotated?", "relevant_doc_ids": ["security"], "reference_answer": "API keys should be rotated at least every 90 days."}
+{"id": "q8", "question": "Why can a webhook event arrive twice and how should receivers handle it?", "relevant_doc_ids": ["webhooks"], "reference_answer": "Failed deliveries are retried, so the same event can be delivered more than once; process events idempotently."}
+{"id": "q9", "question": "How long are transaction records kept?", "relevant_doc_ids": ["data-retention"], "reference_answer": "Transaction records are retained for 7 years."}
+{"id": "q10", "question": "What should a client do when it receives HTTP 429?", "relevant_doc_ids": ["limits"], "reference_answer": "Back off and retry using the Retry-After header rather than fail immediately."}

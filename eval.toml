@@ -1,0 +1,24 @@
+# Sample evaluation configuration. Paths are relative to this file.
+
+[data]
+documents = "data/sample/documents.jsonl"
+questions = "data/sample/questions.jsonl"
+answers = "data/sample/answers.jsonl"      # optional: omit to evaluate retrieval only
+
+[chunking]
+size = 120      # words per chunk
+overlap = 20    # words shared between consecutive chunks
+
+[retrieval]
+k = 3
+k1 = 1.5
+b = 0.75
+
+[generation]
+support_threshold = 0.6   # share of a sentence's content words that must appear in one context
+
+# Quality gates: the run exits with code 1 if any metric falls below its minimum.
+[gates]
+"recall@3" = 0.90
+mrr = 0.80
+groundedness = 0.85
